@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About the Jekyll Theme
+title: About 3dB
 excerpt: "So Simple is a responsive Jekyll theme for your words and images."
 modified: 2014-08-08T19:44:38.564948-04:00
 image:
@@ -9,17 +9,14 @@ image:
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the follow up to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes) --- by designer slash illustrator [Michael Rose](http://mademistakes.com).
+This blog tries to address Big Data ideas in the context of Information Theory and Signal Processing.
 
-## So Simple Theme is all about:
+The title is inspired by a “mathematical constant" in the theory of signal detection and analysis.  3 decibels corresponds to half the power of a signal:
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
-* Minimal embellishments and subtle animations.
-* Optional large feature images for posts and pages.
-* [Custom 404 page]({{ site.url }}/404.html) to get you started.
-* [Simple site search](https://github.com/christian-fei/Simple-Jekyll-Search)
-* Support for Disqus Comments
+$$20\log_{10}\left( \frac{1}{\sqrt{2}} \right) \Longleftrightarrow 10\log_{10}\left( \frac{1}{2} \right)$$
+
+In bandwidth measurements, the 3dB points are taken as the limits for upper and lower cutoff frequencies.  This is because a 50% drop in power is a sufficient condition for most signal processing algorithms to cope with.
+
 
 <a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install So Simple Theme</a>
 
