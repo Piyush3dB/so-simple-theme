@@ -34,7 +34,7 @@ owner:
   name: Piyush
   avatar: photo.jpg
   email: you@email.com
-  disqus-shortname:
+  disqus-shortname: Piyush3db
   twitter: #username
   facebook: #username
   github: #username
@@ -47,7 +47,7 @@ owner:
   weibo: #userid
   google:
     plus: #username
-    analytics:
+    analytics: UA-58124896-1
     verify:
     ad-client:
     ad-slot:
