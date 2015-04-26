@@ -17,7 +17,4 @@ $$20\log_{10}\left( \frac{1}{\sqrt{2}} \right) \Longleftrightarrow 10\log_{10}\l
 
 In bandwidth measurements, the 3dB points are taken as the limits for upper and lower cutoff frequencies.  This is because a 50% drop in power is a sufficient condition for most signal processing algorithms to cope with.
 
-
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install So Simple Theme</a>
-
 [^1]: Example: *domain.com/category-name/post-title*
