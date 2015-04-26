@@ -3,6 +3,7 @@ layout: post
 title: "A note on the Gardner Sampling Error Detector"
 excerpt: "Different forms of the error detector formula"
 categories: blog
+tags: [signal processing]
 ---
 
 

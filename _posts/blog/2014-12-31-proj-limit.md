@@ -3,6 +3,7 @@ layout: post
 title: "The projection space of multi-dimensional data"
 excerpt: "Pairwise analysis on multidimensional datasets"
 categories: blog
+tags: [signal processing, big data]
 ---
 
 Under the framework of multi-dimensional signal processing, the decomposition of a data set proceeds via projections onto eigenfunctions of a desired transform.  Projections may be of the form where ordering is important, such as in Matching Pursuit or Periodicity Transform, or where ordering does not matter as in Gabor or Hilbert Transform.  For a dataset of $$N$$ dimensions, the signal processing on random projections proceeds in groups of $$n$$ at a time where $$n \leq N$$.
