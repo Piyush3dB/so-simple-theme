@@ -4,6 +4,7 @@ title: Univariate distribution relationships
 excerpt: A chart showing the relationships between probability distributions
 categories: blog
 tags: [signal processing]
+comments: true
 ---
 
 
