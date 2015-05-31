@@ -31,7 +31,7 @@ The dot product takes $$ \mathbb{R}^{N} \times \mathbb{R}^{N} $$ to $$ \mathbb{R
 The procedure is easily visualised if $$N=2$$ in $$\mathbb{R}^{2}$$ space:
 
 <figure>
-	<a href="/images/dotProd.png"><img src="/images/dotProd.png" alt="image"></a>
+	<a href="http://jackschaedler.github.io/circles-sines-signals/dotproduct.html"><img src="/images/dotProd.png" alt="image"></a>
 	<figcaption><a href="http://jackschaedler.github.io/circles-sines-signals/dotproduct.html" title="Geometric Interpretation of the Dot Product">Geometric Interpretation of the dot product</a>.</figcaption>
 </figure>
 
@@ -84,6 +84,6 @@ The extra manipulation of signals $$x[n]$$ and $$y[n]$$ by subtracting their mea
 
 In summary:
 
-* The statistical covariance $$cov_{x,y}$$ is the average cross energy of $$x[n]$$ and $$y[n]$$.
+* Statistical covariance $$cov_{x,y}$$ is the average cross energy of $$x[n]$$ and $$y[n]$$.
 * The variance of a signal $$x[n]$$ is the square root of the [power](http://www.sp4comm.org/webversion/livre.html#x1-210002.1.6) of the mean adjusted signal.
 * Correlation in Signal Processing and Statistics appear to have diffferent formulations, but they are exactly the same mathematical procedures. 
