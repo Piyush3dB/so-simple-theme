@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-The Stastics and Signal Processing texts approach the idea of correlation in different ways, sometimes creating confusion as to that exactly the metric is and why it works.  In this post I'm going to present the way I intuitively understand [signal correlation](http://en.wikipedia.org/wiki/Cross-correlation) and how I relate it to the idea of statistical correlation, more commonly known as the [Pearson product-moment correlation coefficient](http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient).
+The Statistics and Signal Processing texts approach the idea of correlation in different ways, sometimes creating confusion as to what exactly the metric is and why it works.  In this post I'm going to present the way I intuitively understand [signal correlation](http://en.wikipedia.org/wiki/Cross-correlation) and how I relate it to the idea of statistical correlation, more commonly known as the [Pearson product-moment correlation coefficient](http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient).
 
 Simply put correlation is a linear measure of similarity between two signals $$x[n]$$ and $$y[n]$$.  From a Signal Processing view a 'crude' measure of similarity is the cross energy of the two signals
 
