@@ -10,7 +10,7 @@ share: true
 
 
 
-It took me a while to understand the inner working of the correlation metric does and why it works.  In this post I'm going to present my intuitive understanding of [Signal correlation](http://en.wikipedia.org/wiki/Cross-correlation) and how I relate it to the idea of Statistical correlation, more commonly known as the [Pearson product-moment correlation coefficient](http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient).
+It took me a while to understand the inner working of the correlation metric does and why it works.  In this post I'm going to present my intuitive understanding of [signal correlation](http://en.wikipedia.org/wiki/Cross-correlation) and how I relate it to the idea of statistical correlation, more commonly known as the [Pearson product-moment correlation coefficient](http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient).
 
  
 
@@ -62,17 +62,34 @@ $$
 
 The normalisation essentially converts signals $$\vec{x}$$ and $$\vec{y}$$ to a common unit system (the unit vector) and the implication of this is the correlation value always falls in the meaningful range $$[-1, 1]$$.
 
-What about the definition of Statistical correlation which appears to have a different formulation:
+What about the definition of statistical correlation which appears to have a different formulation:
+
+$$
+corr_{x,y} = \frac{cov_{x,y}}{\sigma_{x} \sigma_{y}}
+$$
+
+With some algebra we can show the the formula is not all that different from the above thinking because with a bit of algebra we can show
+
+$$
+\begin{eqnarray}
+\frac{cov_{x,y}}{\sigma_{x} \sigma_{y}} & = & \frac{\frac{1}{N} \sum_{n=0}^{N-1} (x[n] - \bar{x} )(y[n] - \bar{y}) }{ \sqrt{\frac{1}{N} \sum_{n=0}^{N-1} (x[n]-\bar{x})^2 } \sqrt{\frac{1}{N} \sum_{n=0}^{N-1} (y[n]-\bar{y})^2 }} \\ 
+
+& = & \frac{\frac{1}{N} \sum_{n=0}^{N-1} (x[n] - \bar{x} )(y[n] - \bar{y}) }{ \frac{1}{\sqrt{N}} \sqrt{ \sum_{n=0}^{N-1} (x[n]-\bar{x})^2 }  \frac{1}{\sqrt{N}}\sqrt{ \sum_{n=0}^{N-1} (y[n]-\bar{y})^2 }} \\
+
+& = & \frac{ \sum_{n=0}^{N-1} (x[n] - \bar{x} )(y[n] - \bar{y}) }{  \sqrt{ \sum_{n=0}^{N-1} (x[n]-\bar{x})^2 }  \sqrt{ \sum_{n=0}^{N-1} (y[n]-\bar{y})^2 }} \\
+
+& = & \frac{\overrightarrow{x - \bar{x}} \cdot \overrightarrow{y - \bar{y}} }{ \mid \overrightarrow{x - \bar{x}} \mid \mid \overrightarrow{y - \bar{y}} \mid} \\
+
+& = & \frac{\overrightarrow{x - \bar{x}}   }{ \mid \overrightarrow{x - \bar{x}} \mid } \cdot \frac{ \overrightarrow{y - \bar{y}} } {\mid \overrightarrow{y - \bar{y}} \mid} \\
+
+& = & corr_{x,y}
+
+\end{eqnarray}
+$$
+
+The extra manipulation of signals $$x[n]$$ and $$y[n]$$ by subtraction of their means $$\bar{x}$$ and $$\bar{y}$$ is just part of the procedure of converting them to a common unit system (mean adjusted) before applying the normalisation to convert into the permitted unit system (unit vector) so that dot may be correctly computed.
 
 
-With some algebra we can show the the formula is not all that different from the above thinking because
-
-
-
-[elimiate N]
-
-
-The extra manipulation of signals x and y by subtraction of their means is just part of the procedure of converting them to a common unit before applying the normalisation and then dot product of the normalised mean adjusted signal.  If we didn't subtract the means then the calculation of the unit vectors would yeild scaled unit vectors which would cause cos t fo fall outside the meaningful range [-1, 1]
 
 
 
