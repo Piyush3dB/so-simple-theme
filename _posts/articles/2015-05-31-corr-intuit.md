@@ -39,7 +39,7 @@ It also turns out the $$cos(\theta) $$ term which is the angle between the two v
 
 If $$x[n]$$ and $$y[n]$$ are the same then their vector representations $$\vec{x}$$ and $$\vec{y}$$ will be parallel to each other and pointing in the same direction.  They would have an angle $$\theta = 0^{\circ}$$ and therefore a maximum positive similarity because $$cos(\theta) = 1$$.  At the other end of the scale their vector representations would be parallel yet pointing in opposite directions to each other.  They would have a maximum negative similarity since angle $$\theta = 180^{\circ} \Rightarrow cos(\theta) = -1$$.  Therefore all other orientations of vectors will give a similarity metric falling between the most positive and most negative values, that is $$cos(\theta) \in [-1, 1] $$.  If the vectors are perpendicular then the correlation between them would be zero.  From this observation the natural interpretation of the $$cos(\theta)$$ term is that it gives a measure of how parallel the vectors are to eachother, which is in fact the correlation between signals $$x[n]$$ and $$y[n]$$.
 
-`(correlation between x and y) = (cos of angle between vector representations of x and y)`
+`(correlation between x and y) = (cos of angle between x and y)`
 
 So the 'crude' measure of similarity we started off with - the cross energy - is 'refined' by applying correction terms determined by the magnitude of the respective signals. This formula is the the well known definition of [cosine similarity](http://en.wikipedia.org/wiki/Cosine_similarity).
 
