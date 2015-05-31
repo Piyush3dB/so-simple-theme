@@ -86,4 +86,4 @@ In summary:
 
 * Statistical covariance $$cov_{x,y}$$ is the average cross energy of $$x[n]$$ and $$y[n]$$.
 * The variance of a signal $$x[n]$$ is the square root of the [power](http://www.sp4comm.org/webversion/livre.html#x1-210002.1.6) of the mean adjusted signal.
-* Correlation in Signal Processing and Statistics appear to have diffferent formulations, but they are exactly the same mathematical procedures. 
+* Correlation in Signal Processing and Statistics appear to have different formulations, but they are exactly the same mathematical procedures. 
