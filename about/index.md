@@ -10,7 +10,7 @@ image:
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-This blog tries to address Big Data ideas in the context of Information Theory and Signal Processing.
+This blog is my take on Machine Learning in the context of Information Theory and Signal Processing.
 
 The title is inspired by a “mathematical constant" in the theory of signal detection and analysis.  3 decibels corresponds to half the power of a signal:
 

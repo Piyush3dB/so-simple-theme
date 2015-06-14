@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Expected Mutual Information of a contingency table
+title: Expected Mutual Information from a contingency table
 excerpt: Linking joint counts to probabilities and mutial information
 categories: blog
 tags: [information theory]
