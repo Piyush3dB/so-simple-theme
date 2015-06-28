@@ -14,7 +14,7 @@ This is my take on Machine Learning in the context of Information Theory and Sig
 
 The blog title is inspired by a “mathematical constant" in the theory of signal detection and analysis.  3 decibels corresponds to half the power of a signal:
 
-$$20\log_{10}\left( \frac{1}{\sqrt{2}} \right) \Longleftrightarrow 10\log_{10}\left( \frac{1}{2} \right)$$
+$$20\log_{10}\left( \frac{1}{\sqrt{2}} \right) \Longleftrightarrow 3dB \Longleftrightarrow 10\log_{10}\left( \frac{1}{2} \right)$$
 
 In bandwidth measurements, the 3dB points are taken as the limits for upper and lower cutoff frequencies.  This is because a 50% drop in power is sufficient for most signal processing algorithms to cope with.
 
