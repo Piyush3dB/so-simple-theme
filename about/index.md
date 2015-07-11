@@ -12,7 +12,7 @@ image:
 
 This is my take on Machine Learning in the context of Information Theory and Signal Processing.
 
-My background is in Electrical Engineering and Applied Mathematics.  I'm presently a Research Scientist at [Ericsson](http://ericsson.com) where my role is to design efficient Signal Processing and Machine Learning algorithms used in large scale telecommunications infrastructure.
+My background is in Electrical Engineering and Applied Mathematics.  I'm presently a Research Scientist at [Ericsson](http://ericsson.com).
 
 The blog title is inspired by a “mathematical constant" in the theory of signal detection and analysis.  3 decibels corresponds to half the power of a signal:
 
